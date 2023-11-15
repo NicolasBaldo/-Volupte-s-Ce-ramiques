@@ -1,0 +1,21 @@
+html { 
+    scroll-behavior: smooth;
+} 
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Ajoutez d'autres styles de mise en page au besoin */
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+.entreprise-info {
+    /* Ajoutez des styles spécifiques à vos informations d'entreprise ici */
+    font-size: 14px;
+    color: #333;
+}

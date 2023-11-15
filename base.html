@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="base1.css">
+    <title>Voluptés céramiques</title>
+    <style>
+        body {
+            font-family: 'Georgia', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: skyblue;
+            font-size: 5em;
+            margin: 20px 0; /* Added margin for spacing */
+            font-family: 'YatraOne', cursive;
+        }
+
+        img {
+            max-width: 55%; /* Make sure images are responsive */
+            height: auto;
+            object-fit: contain;
+            margin: 5px;
+            animation: rotateImage 3s infinite alternate, scrollImage 2s infinite alternate;
+            border-radius: 50%; /* Make all images circular */
+        }
+
+     
+
+        @keyframes scrollImage {
+            from {
+                transform: translateY(0);
+            }
+            to {
+                transform: translateY(10px);
+            }
+        }
+
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; /* Adjusted spacing between images */
+            align-items: center;
+            margin: 20px; /* Added margin for spacing */
+        }
+
+        .image-container div {
+            text-align: center;
+            margin: 10px;
+            width: 48%; /* Set width to fit two images in a row with a small gap */
+            cursor: pointer; /* Add cursor pointer to indicate it's clickable */
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=YatraOne&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  
+
+<div class="container">
+        <h1>Voluptés céramiques</h1>
+
+        <div class="image-container">
+            <div onclick="redirectToPage('page1.html')">
+                <img src="Anus 1.jpeg" alt="Volupté Florale">
+                <p>Volupté Florale</p>
+            </div>
+
+            <div onclick="redirectToPage('page2.html')">
+                <img src="Assiette 1.jpeg" alt="Dessous de Plat Majestueux">
+                <p>Dessous de Plat Majestueux</p>
+            </div>
+
+            <div onclick="redirectToPage('page3.html')">
+                <img src="Pichet 1.jpeg" alt="Joli Pichet pour Bon Vin">
+                <p>Joli Pichet pour Bon Vin</p>
+            </div>
+
+            <div onclick="redirectToPage('page4.html')">
+                <img src="Pot de Fleurs 1:1.jpeg" alt="Sublimeur de fleurs">
+                <p>Sublimeur de fleurs</p>
+            </div>
+
+            <div onclick="redirectToPage('page5.html')">
+                <img src="Tasse 1.jpeg" alt="Le Chocolat du matin">
+                <p>Le Chocolat du matin</p>
+            </div>
+
+            <div onclick="redirectToPage('page6.html')">
+                <img src="Vase 1:1.jpeg" alt="Celui là c'est pour le Blanc">
+                <p>Celui là c'est pour le Blanc !</p>
+            </div>
+
+            <div onclick="redirectToPage('page7.html')">
+                <img src="Vide Poches 1.jpeg" alt="Repose clés ou poches pleines">
+                <p>Repose clés pour poches pleines</p>
+            </div> 
+
+            <div onclick="redirectToPage('page8.html')">
+                <img src="Verres 1.jpeg" alt="Pour l'apéritif"> 
+                <p>Pour l'apéritif</p>
+            
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function redirectToPage(page) {
+            window.location.href = page;
+        }
+    </script>
+
+<footer>
+    <div class="entreprise-info">
+        <p>Voluptés Céramiques</p>
+        <p>La Ferme de la Vauve 91000 Massy-Palaiseau</p>
+        <p>Contact : 06 84 04 74 71</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
