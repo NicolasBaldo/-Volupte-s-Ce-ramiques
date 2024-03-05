@@ -1,39 +1,116 @@
-body {
-    font-family: Arial, sans-serif;
+/* Import de Tailwind CSS */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Styles pour le conteneur principal */
+.payment-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+
+/* Styles pour l'image dans le conteneur */
+.payment-cart img {
+    width: 1.5rem; /* Ajustez la taille de l'image ici */
+    height: 1.5rem; /* Ajustez la taille de l'image ici */
+}
+
+/* Styles pour le texte dans le conteneur */
+.payment-cart .ml-2 {
+    margin-left: 0rem; /* Ajustez la marge gauche ici */
+    font-weight: bold;
+    font-size: 2rem; /* Ajustez la taille de la police ici */
+    display: flex;
+    align-items: center;
+}
+
+/* Styles pour les boutons dans le conteneur */
+.payment-cart .flex.ml-4 button,
+.payment-cart .flex.ml-4 span {
+    width: 2rem; /* Ajustez la largeur ici */
+    height: 2rem; /* Ajustez la hauteur ici */
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
-
-.payment-menu {
-    display: flex;
-    justify-content: space-between;
-    width: 300px;
-}
-
-.payment-option {
-    text-align: center;
+    color: rgb(7, 7, 7); /* Couleur du texte */
     cursor: pointer;
-    padding: 10px;
-    border: 1px solid #240d79;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    outline: none;
+    border: none;
+    border-radius: 999999px; /* Utilisé pour créer un cercle */
 }
 
-.payment-option:hover {
-    background-color: #f5f5f5;
+.payment-counter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Pour placer le compteur à droite */
+    border-radius: 4px;
+    overflow: hidden;
 }
 
-.payment-option img {
-    width: 35px;
-    height: 50px;
+.counter-btn {
+    padding: 1px 1px;
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
 }
 
-.payment-option span {
-    display: block;
-    margin-top: 10px;
+#counter {
+    padding: 0.5px 0.5px;
+    border-left:0.8px 
 }
 
-
+.description {
+    max-width: 150%;
+    margin-left: 0px; /* Changer cette valeur pour ajuster le décalage */
+    margin-right: 40px;
+}
+/* styles.css */
+.payment-counter {
+    background-color: #ffffff;
+    border-radius: 0.375rem; /* ou utilisez les classes Tailwind "rounded-md" */
+    padding: 1rem;
+  }
+  
+  .counter-btn {
+    background-color: #ffffff;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem; /* ou utilisez les classes Tailwind "rounded" */
+  }
+  
+  .counter-btn:hover {
+    background-color: #f3f3f4;
+  }
+  
+  .validation-section {
+    margin-top: 1rem;
+    display: none;
+  }
+  
+  .validation-section h2 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  .validation-section p {
+    margin-bottom: 1rem;
+  }
+  
+  #validateBtn {
+    display: none;
+    background-color: #38a169;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 0rem 2.8rem;
+    border-radius: 0.25rem; /* ou utilisez les classes Tailwind "rounded" */
+  }
+  
+  #validateBtn:hover {
+    background-color: rgb(81, 81, 244);
+  }
+  

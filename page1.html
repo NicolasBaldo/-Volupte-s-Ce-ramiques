@@ -45,15 +45,11 @@
             cursor: pointer;
         }
 
-        .payment-option img {
-            max-width: 200%; /* Adjust the size of the payment option icons */
-            height: auto;
-        }
+        
     </style>
 </head>
-
 <body>
-
+<div class="container">
     <div class="container">
         <div>
             <img class="main-image" src="Anus 2.jpeg" alt="Main Image">
@@ -62,20 +58,38 @@
         <div class="overlay">
             <img class="overlay-image" src="Anus 3.jpeg" alt="Overlay Image">
             <p class="description">Petit pot céramique avec une forme singulière pour vos encens</p>
-            <br><p>Prix : 70€</p>
+            <br>
+            <p>Prix : 70€</p>
         </div>
 
-        <div class="payment-menu">
-            <div class="payment-option" id="credit-card-option" onclick="selectPaymentOption('credit-card')">
-                <img src="carte-de-credit.png" alt="Credit Card">
-                <span></span>
-            </div>
-            <div class="payment-option" id="paypal-option" onclick="selectPaymentOption('paypal')">
-                <img src="pay-pal.png" alt="PayPal">
-                <span></span>
-            </div>
+        <div class="payment-cart flex items-center">
+            <div class="flex items-center">
+              </div>
+            <div class="flex ml-4">
+                <div class="payment-counter p-4 bg-gray-200 rounded-md">
+                    <button class="counter-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onclick="decrementCount()">-</button>
+                    <span id="counter" class="text-2xl font-bold mx-4">0</span>
+                    <button class="counter-btn bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded" onclick="incrementCount()">+</button>
+                </div>
+                
+                <div class="validation-section mt-4" style="display: none;">
+                    <h2 class="text-lg font-bold mb-2">Valider le panier</h2>
+                    <p class="mb-4">Total du panier: <span id="total" class="font-bold">0</span></p>
+                    <button id="validateBtn" onclick="validateCart()" style="display: none;" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded">Valider</button>
+                </div>
+                
+              
+                
+                
+                
+                
+                
+<script src="page1.js"></script>
+    
+            <!-- Votre texte ici -->
         </div>
-        <script src="page1.js"></script>
+      
+    </div>
     </body>
 
     </html>
